@@ -15,6 +15,8 @@
 		192D8AA521CEA6CB00117A9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 192D8AA421CEA6CB00117A9C /* main.m */; };
 		192D8AAF21CEA6CB00117A9C /* Warri0rTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 192D8AAE21CEA6CB00117A9C /* Warri0rTests.m */; };
 		192D8ABA21CEA6CB00117A9C /* Warri0rUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 192D8AB921CEA6CB00117A9C /* Warri0rUITests.m */; };
+		192D8AC921CEAB3100117A9C /* Exploit.c in Sources */ = {isa = PBXBuildFile; fileRef = 192D8AC821CEAB3100117A9C /* Exploit.c */; };
+		192D8ACB21CED63D00117A9C /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 192D8ACA21CED63D00117A9C /* readme.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		192D8AB521CEA6CB00117A9C /* Warri0rUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Warri0rUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		192D8AB921CEA6CB00117A9C /* Warri0rUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Warri0rUITests.m; sourceTree = "<group>"; };
 		192D8ABB21CEA6CB00117A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		192D8AC721CEAB3100117A9C /* Exploit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exploit.h; sourceTree = "<group>"; };
+		192D8AC821CEAB3100117A9C /* Exploit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Exploit.c; sourceTree = "<group>"; };
+		192D8ACA21CED63D00117A9C /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 		192D8A8921CEA6C900117A9C = {
 			isa = PBXGroup;
 			children = (
+				192D8ACA21CED63D00117A9C /* readme.txt */,
 				192D8A9421CEA6CA00117A9C /* Warri0r */,
 				192D8AAD21CEA6CB00117A9C /* Warri0rTests */,
 				192D8AB821CEA6CB00117A9C /* Warri0rUITests */,
@@ -106,6 +112,8 @@
 				192D8A9821CEA6CA00117A9C /* ViewController.h */,
 				192D8A9921CEA6CA00117A9C /* ViewController.m */,
 				192D8A9B21CEA6CA00117A9C /* Main.storyboard */,
+				192D8AC721CEAB3100117A9C /* Exploit.h */,
+				192D8AC821CEAB3100117A9C /* Exploit.c */,
 				192D8A9E21CEA6CB00117A9C /* Assets.xcassets */,
 				192D8AA021CEA6CB00117A9C /* LaunchScreen.storyboard */,
 				192D8AA321CEA6CB00117A9C /* Info.plist */,
@@ -237,6 +245,7 @@
 			files = (
 				192D8AA221CEA6CB00117A9C /* LaunchScreen.storyboard in Resources */,
 				192D8A9F21CEA6CB00117A9C /* Assets.xcassets in Resources */,
+				192D8ACB21CED63D00117A9C /* readme.txt in Resources */,
 				192D8A9D21CEA6CA00117A9C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +274,7 @@
 				192D8A9A21CEA6CA00117A9C /* ViewController.m in Sources */,
 				192D8AA521CEA6CB00117A9C /* main.m in Sources */,
 				192D8A9721CEA6CA00117A9C /* AppDelegate.m in Sources */,
+				192D8AC921CEAB3100117A9C /* Exploit.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R7LX5HP3XH;
 				INFOPLIST_FILE = Warri0r/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R7LX5HP3XH;
 				INFOPLIST_FILE = Warri0r/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

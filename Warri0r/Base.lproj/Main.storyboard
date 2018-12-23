@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,80 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTT-nI-x3m">
+                                <rect key="frame" x="0.0" y="390" width="414" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="geY-EX-XpS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Run Code"/>
+                                <connections>
+                                    <action selector="playground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ZJ-Ds-FrV"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="za3-4J-fqr">
+                                <rect key="frame" x="20" y="428" width="374" height="288"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="288" id="AHq-hg-QoR"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warri0r" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isX-BD-i0t">
+                                <rect key="frame" x="20" y="44" width="374" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="sBF-wm-xwr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="52"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgq-cI-ajf">
+                                <rect key="frame" x="0.0" y="223" width="414" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hOz-bW-SMx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Escape Sandbox"/>
+                                <connections>
+                                    <action selector="escape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zqv-qj-tcv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="isX-BD-i0t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FnQ-Pz-cyh"/>
+                            <constraint firstItem="cgq-cI-ajf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JvE-oI-KeA"/>
+                            <constraint firstItem="za3-4J-fqr" firstAttribute="top" secondItem="UTT-nI-x3m" secondAttribute="bottom" constant="8" id="KJv-Wn-XrX"/>
+                            <constraint firstItem="isX-BD-i0t" firstAttribute="leading" secondItem="za3-4J-fqr" secondAttribute="leading" id="OzR-6r-uxH"/>
+                            <constraint firstItem="cgq-cI-ajf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="223" id="Qis-G1-Vxz"/>
+                            <constraint firstItem="za3-4J-fqr" firstAttribute="top" secondItem="UTT-nI-x3m" secondAttribute="bottom" constant="8" symbolic="YES" id="RgX-QT-23t"/>
+                            <constraint firstAttribute="bottom" secondItem="za3-4J-fqr" secondAttribute="bottom" constant="20" symbolic="YES" id="Ug4-UP-bHy"/>
+                            <constraint firstItem="cgq-cI-ajf" firstAttribute="leading" secondItem="UTT-nI-x3m" secondAttribute="leading" id="XzJ-2C-95c"/>
+                            <constraint firstAttribute="trailing" secondItem="cgq-cI-ajf" secondAttribute="trailing" id="ZaW-gE-zbN"/>
+                            <constraint firstItem="cgq-cI-ajf" firstAttribute="trailing" secondItem="UTT-nI-x3m" secondAttribute="trailing" id="cyT-OS-Kbu"/>
+                            <constraint firstItem="isX-BD-i0t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="fw8-6k-aWu"/>
+                            <constraint firstItem="isX-BD-i0t" firstAttribute="trailing" secondItem="za3-4J-fqr" secondAttribute="trailing" id="glI-jq-2cA"/>
+                            <constraint firstItem="UTT-nI-x3m" firstAttribute="centerX" secondItem="za3-4J-fqr" secondAttribute="centerX" id="zhb-bK-1Uq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="WarriorLog" destination="za3-4J-fqr" id="YVp-Ut-RTp"/>
+                        <outlet property="escapebutton" destination="cgq-cI-ajf" id="VpW-Sc-BwY"/>
+                        <outlet property="playground" destination="UTT-nI-x3m" id="Xvh-xd-IQk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="132.06521739130434"/>
         </scene>
     </scenes>
 </document>

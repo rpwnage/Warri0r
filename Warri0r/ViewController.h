@@ -10,6 +10,12 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)escape:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextView *WarriorLog;
+- (IBAction)playground:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *playground;
+
+@property (weak, nonatomic) IBOutlet UIButton *escapebutton;
 
 @end
 
