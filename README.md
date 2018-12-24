@@ -6,3 +6,6 @@ This version of the [QuartzCore Heap Overflow](https://blogs.securiteam.com/inde
 Declared by [this article](https://blogs.securiteam.com/index.php/archives/3796) to be working on:
 - iOS 12.0.1
 - macOS 10.14
+Declared by me/feedback:
+- iOS 12.1.2 (comming soon)
+- iOS 12.0.1 (Resprings) <- This is maybe caused by the code I've made. I'll look into this now.
