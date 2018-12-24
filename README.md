@@ -1,4 +1,4 @@
 # Warri0r
-ios 12 Sandbox escape POC.
+This version of the [QuartzCore Heap Overflow](https://blogs.securiteam.com/index.php/archives/3796) may only work on iOS 12.0. Im not sure about iOS 12.0.1 at the moment due to reports of the app just causing a respring. I will focus on making this flexible to other firmwares soon. 
 # Credits
-The Exploit.c file was taken from the `QuartzCoreFunctionIntOverFlow`. I do NOT claim to make that exploit. but i also cant really find the original author. so if you know him please tell me.
+["Exploit.c" (QuartzCore Heap Overflow)](https://blogs.securiteam.com/index.php/archives/3796)
